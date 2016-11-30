@@ -58,9 +58,7 @@ for state in states:
 ##                  data_fmt = '%s,%2.1f'
                 
             params = ','.join(fields)
-            
-            # This business below was a cheap solution to an ESRI memory error
-            # 
+
             result = arcpy.GetCount_management(intable)
             count = int(result.getOutput(0))
     
